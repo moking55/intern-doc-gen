@@ -1,0 +1,206 @@
+<div class="p-3 mb-4 bg-dark text-light">
+    <h1>1. ข้อมูลสถานประกอบการ</h1>
+    <p>โปรดกรอกข้อมูลสถานประกอบการให้ครบถ้วน และถูกต้อง</p>
+</div>
+
+<form action="submit.php?step=1" method="post">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="form-group">
+                <label for="name">ชื่อสถานประกอบการ</label>
+                <input type="text" class="form-control" id="company_name" name="company_name" required>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="form-group">
+                <label for="expect">บริษัทนี้นักศึกษาติดต่อ เงื่อนไข</label>
+                <!-- select -->
+                <select class="form-control" id="expect" name="expect">
+                    <option value="1">ฝึกงานเพียงอย่างเดียว</option>
+                    <option value="2">ฝึกงานต่อด้วยสหกิจ</option>
+                    <option value="3">ฝึกงานและประเมินฝึกสหกิจ</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="type">ลักษณะการดำเนินกิจการ</label>
+        <input type="text" class="form-control" id="type" name="type" required>
+    </div>
+
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_number">เลขที่</label>
+                <input type="text" class="form-control" id="address_number" name="address_number" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_moo">หมู่ที่</label>
+                <input type="text" class="form-control" id="address_moo" name="address_moo" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_road">ถนน</label>
+                <input type="text" class="form-control" id="address_road" name="address_road" required>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_thambon">ตำบล</label>
+                <input type="text" class="form-control" id="address_thambon" name="address_thambon" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_amphoe">อำเภอ</label>
+                <input type="text" class="form-control" id="address_amphoe" name="address_amphoe" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_provine">จังหวัด</label>
+                <input type="text" class="form-control" id="address_provine" name="address_provine" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_zipcode">รหัสไปรษณีย์</label>
+                <input type="text" class="form-control" id="address_zipcode" name="address_zipcode" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_tel">โทรศัพท์</label>
+                <input type="text" class="form-control" id="address_tel" name="address_tel" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_fax">โทรสาร</label>
+                <input type="text" class="form-control" id="address_fax" name="address_fax" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_email">อีเมล์</label>
+                <input type="text" class="form-control" id="address_email" name="address_email" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="address_web">เว็บไซต์</label>
+                <input type="text" class="form-control" id="address_web" name="address_web" required>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label for="department">แผนกที่นักศึกษาเข้าฝึกงาน</label>
+        <input type="text" class="form-control" id="department" name="department" required>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="form-group">
+                <label for="duties">หน้าที่ของแผนก</label>
+                <input type="text" class="form-control" id="duties" name="duties" required>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="form-group">
+                <label for="tasks">หน้าที่นักศึกษาที่ได้รับมอบหมายให้ปฏิบัติฝึกงาน</label>
+                <input type="text" class="form-control" id="tasks" name="tasks" required>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="contact">บุคคลที่นักศึกษาไปติดต่อเกี่ยวกับฝึกงาน</label>
+                <input type="text" class="form-control" id="contact" name="contact" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="contact_position">ตำแหน่ง</label>
+                <input type="text" class="form-control" id="contact_position" name="contact_position" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="contact_tel">โทรศัพท์</label>
+                <input type="text" class="form-control" id="contact_tel" name="contact_tel" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="contact_email">อีเมล์</label>
+                <input type="text" class="form-control" id="contact_email" name="contact_email" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="relation">มีความเกี่ยวข้องกับนักศึกษา</label>
+                <select class="form-control" id="relation" name="relation">
+                    <option value="ญาติ">ญาติ</option>
+                    <option value="คนรู้จัก">คนรู้จัก</option>
+                    <option value="หาด้วยตนเอง">หาด้วยตนเอง</option>
+                    <option value="อื่นๆ">อื่นๆ (โปรดระบุ)</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="other_relation">อื่นๆ (โปรดระบุ)</label>
+                <input type="text" class="form-control" id="other_relation" name="other_relation">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="position">หากทำเอกสาร ขอความอนุเคราะห์รับนักศึกษาฝึกงาน ต้องส่งเอกสารถึงตำแหน่งใด</label>
+                <input type="text" class="form-control" id="position" name="position" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="hr_department">ฝ่าย</label>
+                <input type="text" class="form-control" id="hr_department" name="hr_department" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="phone">โทรศัพท์</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="fax">โทรสาร</label>
+                <input type="text" class="form-control" id="fax" name="fax" required>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="form-group">
+                <label for="email">อีเมล์</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary btn-lg" type="submit">ส่งข้อมูล</button>
+</form>
